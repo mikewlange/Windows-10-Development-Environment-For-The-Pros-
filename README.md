@@ -1,11 +1,4 @@
-
-## A Word about Ubuntu Linux on Windows
-:point_up: While [Bash on Windows](https://msdn.microsoft.com/en-us/commandline/wsl/about) isn't perfect yet, it's an amazing tool that can make development a lot easier - especially when you're dealing with Bash scripts, Ruby, or Ubuntu binaries. I would currently (January 2017) not recommend it as a replacement for Git, Node, or Go - mostly because those tools are already pretty performant on Windows itself. However, they run just fine in Bash, so if you feel like moving most of your development over, go for it. Here's the how-to:
-
- * Ensure that you're running Windows 10 Anniversary Update (build 14311 and up)
- * Enable Developer Mode (Settings - Update & security > For developers)
- * Search for “Windows Features” and choose “Turn Windows features on or off” and enable Windows Subsystem for Linux (Beta).
- * To get Bash installed, open Command Prompt and type “bash”
+## Bash installation on a new Windowns 10 Machine - w
 
 ## Automate it!
 Below, you can see the all the things I need to actually go and work on stuff. If you like all those things, you can automate the installation thanks to the magic of [Boxstarter](http://boxstarter.org/). Simply start PowerShell as Administrator and run:
@@ -69,7 +62,7 @@ Set-ExecutionPolicy Unrestricted -Scope CurrentUser
 If you want to go even futher, check out the attached PowerShell Profile in this repository. It's my personal one and might not be perfect for you, but it makes my personal life a lot easier. You can edit your PowerShell profile with your favorite editor by calling `$PROFILE`, so if you're using Visual Studio Code, call `code $PROFILE` (or `vim $PROFILE` - you get the idea).
 
 #### Bash Tools (wget, curl, etc): Gow
-If you're coming from a Unix machine, you might miss commands like curl, diff, grep and many other. Gow is your friend - it's a collection of a 100+ famous Unix tools recompiled for Windows.
+Gow (Gnu On Windows) is the lightweight alternative to Cygwin. It uses a convenient Windows installer that installs about 130 extremely useful open source UNIX applications compiled as native win32 binaries. It is designed to be as small as possible, about 10 MB, as opposed to Cygwin which can run well over 100 MB depending upon options.
 
 ```
 cinst Gow
@@ -113,6 +106,9 @@ cinst mercurial
 #### Code Editors: Atom, Sublime, VS Code
 I won't join the war debating which editor is the best, but if you're looking for an editor and not a full IDE, chances are that you'll end up using one of those three.
 
+cinst jetbrainstoolbox
+
+
 ```
 cinst SublimeText3
 cinst sublimetext3-contextmenu
@@ -124,26 +120,14 @@ cinst visualstudiocode
 ```
 
 ##### Visual Studio 2015
-If you already own Visual Studio, you should obviously install the version you bought with your precious money. If you don't, do know that Visual Studio 2015 Community Edition is free (for [most people](https://www.visualstudio.com/support/legal/dn877550)).
+If you're a .net deveoper on a windows machine buy Visual Studio. Expecially if you only program c#/asp.net and what not. 
+````
+
+#### GO 
+The languange. I'll put an expesive setup here. 
+'''
 
 ```
-cinst visualstudio2015community
-```
-
-#### Ruby
-Even if you don't care about Ruby at all, bear in mind that it's preinstalled on OS X (and easy to install on Unix), so many dev tools might be trying to leverage it. For example, GitHub pages are compiled using Jekyll - if you want to get in on that, install Ruby.
-
-```
-cinst ruby
-cinst ruby.devkit
-```
-
-#### Go
-Sure, why not.
-```
-cinst golang
-```
-
 #### Python
 Python is a complex world with a bunch of flavors, but Python 3, pip, and easy_install should have you prepared for most things.
 
@@ -152,6 +136,13 @@ cinst python
 cinst pip
 cinst easy.install
 ````
+
+#### Ruby
+becuase you'll run to run gems - other peoples hard work. 
+```
+cinst ruby
+cinst ruby.devkit
+``
 
 ### DevOps
 This stuff is really only relevant if you're interested in DevOps - but if you are, you should probably install the stuff below. It's not likely that you need any of the things below unless you're directly working with it, because none of those things are expected to be installed on a Unix machine.
@@ -162,15 +153,12 @@ If you want to run Docker machines and images, you might not need VirtualBox. In
 Docker released a version for OS X and Windows that no longer requires VirtualBox to be installed - and instead uses the default Hypervisor that comes with the operating system (on Windows, that's Hyper-V). You can [read more about the beta over on Docker's blog](https://docs.docker.com/docker-for-windows/).
 
 ```
-cinst docker-for-windows
+cinst docker-for-window
 ```
-
-or 
-
-
+or win not running 
 wget https://download.docker.com/win/stable/DockerToolbox.exe
 
-However, if you want the old VirtualBox route, go and install that stuff with:
+Virtualbox - monetimes ya need it
 ```
 cinst virtualbox
 cinst virtualbox.extensionpack
@@ -196,12 +184,30 @@ Super duper useful if you're working with Amazon Web Services at all.
 cinst awscli
 cinst awstools.powershell
 ```
+The Goog
 ### GOOGLE CLI
-wget https://dl.google.com/dl/cloudsdk/channels/rapid/GoogleCloudSDKInstaller.exe 
+choco install gcloudsdk
 
 ### IMB Bluemix API
-wget https://public.dhe.ibm.com/cloud/bluemix/cli/bluemix-cli/Bluemix_CLI_0.5.5_amd64.exe
-Install i
+https://console.bluemix.net/docs/starters/install_cli.html
+
+### The Cloud Services if you really want to get shit done
+### My Helo - Heroko
+``` I've deployed 100's of production apps . Many only after working on them after a few weeks. Never have I gone from code to production than with heroku. That nclues all learning curs. I've used every cloud service and cloud service providor out there. These guys and gals are the best. 
+https://cli-assets.heroku.com/branches/stable/heroku-windows-amd64.exe
+
+#### SERVERLESS
+npm install serverless -g
+
+
+#### DATABASES;
+choco install heidisql
+
+#### Deployment and Build
+GULP
+choco install gulp-cli
+GRUNT
+npm install -g grunt-cli
 
 ### Basic Tools
 You'll recognize many of these names. Nothing here is crazy unique, it's just stuff you probably want installed to have a well-running machine.
@@ -217,10 +223,15 @@ cinst sysinternals
 cinst DotNet3.5
 ```
 
-If you're not running Windows 10, also install:
 
-```
-cinst DotNet4.0 -- not needed on windows 8
-cinst DotNet4.5 -- not needed on windows 10
-cinst PowerShell -- not needed on windows 10
+### Developer Frameworks and Opesource Stuff that are must haves for me
+### Electron 
+for cross platofrm windows dev
+````
+cinst electron
+Simetimes we have to 
+choco install composer
+
+## FROFILING
+choco install newrelic
 ```
