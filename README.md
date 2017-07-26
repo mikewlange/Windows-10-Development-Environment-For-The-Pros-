@@ -57,16 +57,16 @@ cinst -y win32-openssh
 ## Cloud 
 npm install -g azure-cli
 
-## The Devil
+### The Devil
 cinst awscli
 cinst awstools.powershell
 
-##Goog App Engine CLI
+### The Awesome
 choco install gcloudsdk
 cinst gcloud, gsutil and bq 
 
 
-##Heroku - The BEst
+### The Brilliant
 https://cli-assets.heroku.com/branches/stable/heroku-windows-amd64.exe
 
 ##
@@ -97,17 +97,24 @@ Install-WindowsUpdate -acceptEula
 ### Developer Frameworks and Opesource Stuff that are must haves for me
 ### Electron 
 for cross platofrm windows dev
-````
 cinst electron
 Simetimes we have to 
 choco install composer
 
-## FROFILING
+### FROFILING
 choco install newrelic
-```
 
 ### My Machine Learning Stack
-
+https://github.com/rhiever/tpot
+https://github.com/mikewlange/leaf
+https://github.com/autumnai/collenchyma
+https://github.com/nikolaypavlov/MLPNeuralNet
+https://github.com/mikewlange/neon
+https://github.com/mikewlange/pattern
+https://github.com/Theano/Theano
+https://github.com/tensorflow/tensorflow
+https://github.com/scikit-learn/scikit-learn
+https://github.com/harvardnlp/im2markup
 
 ## Automate it!
 Below, you can see the all the things I need to actually go and work on stuff. If you like all those things, you can automate the installation thanks to the magic of [Boxstarter](http://boxstarter.org/). Simply start PowerShell as Administrator and run:
