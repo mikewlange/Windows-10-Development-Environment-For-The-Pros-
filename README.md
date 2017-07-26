@@ -45,7 +45,7 @@ cinst -y python
 cinst -y pip
 cinst -y easy.install
 
-## Docer and stuff
+## Docker and stuff
  https://download.docker.com/win/stable/DockerToolbox.exe
  
 ## Virtual Box 
@@ -53,7 +53,7 @@ cinst -y virtualbox
 cinst -y virtualbox.extensionpack
 cinst -y vagrant
 
-##open SSh
+## open SSh
 cinst -y win32-openssh
 
 ## Cloud 
