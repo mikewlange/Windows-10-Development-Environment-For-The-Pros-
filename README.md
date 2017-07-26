@@ -1,11 +1,7 @@
-## Modern Random Programmer Setup.  Lots fo stff. but a lot used. Y
+## Modern Random Programmer Setup. 
+I'm sharin gthis as I needed to set up a Windows 10 dev box for modern laguage agnostic deveopment. I've been off windows for almost 10 years. And they kinda nalied. With 10. I use Mac or ubuntu for commercial work. But I'm qite satified with my (incomplete) setup beow. 
 
-## Automate it!
-Below, you can see the all the things I need to actually go and work on stuff. If you like all those things, you can automate the installation thanks to the magic of [Boxstarter](http://boxstarter.org/). Simply start PowerShell as Administrator and run:
-
-```
-START http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/felixrieseberg/windows-development-environment/master/boxstarter
-```
+This is a fork of something - but completly different. But I did steal the idea to write this here. Thanks for making my lofe easier mystery person.. 
 
 # Configure Windows
 Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions -EnableShowFullPathInTitleBar
@@ -110,6 +106,12 @@ choco install composer
 choco install newrelic
 ```
 
+### My Machine Learning Stack
 
-### My Machine Learning Sack
 
+## Automate it!
+Below, you can see the all the things I need to actually go and work on stuff. If you like all those things, you can automate the installation thanks to the magic of [Boxstarter](http://boxstarter.org/). Simply start PowerShell as Administrator and run:
+
+```
+START http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/felixrieseberg/windows-development-environment/master/boxstarter
+```
