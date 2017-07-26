@@ -1,7 +1,9 @@
 ## Modern Random Programmer Setup. 
-I'm sharin gthis as I needed to set up a Windows 10 dev box for modern laguage agnostic deveopment. I've been off windows for almost 10 years. And they kinda nalied. With 10. I use Mac or ubuntu for commercial work. But I'm qite satified with my (incomplete) setup beow. 
+I'm sharing this as I needed to set up a Windows 10 dev box for modern laguage agnostic deveopment. I've been off windows for almost 10 years. I thought it would be good to write down. 
 
-This is a fork of something - but completly different. But I did steal the idea to write this here. Thanks for making my lofe easier mystery person.. 
+I use Mac or ubuntu for commercial work. But msoft nailed it with in 10. woudn'tswitch back, but it's now my ML machine. But I'm qite satified with my (incomplete) setup beow. 
+
+This is a fork of something - but completly different. But I did steal the idea to write this here. Thanks for making my life easier mystery person.. 
 
 # Configure Windows
 Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions -EnableShowFullPathInTitleBar
@@ -57,19 +59,18 @@ cinst -y win32-openssh
 ## Cloud 
 npm install -g azure-cli
 
-### The Devil
+## The Devil
 cinst awscli
 cinst awstools.powershell
 
-### The Awesome
+## The Wonderful
 choco install gcloudsdk
 cinst gcloud, gsutil and bq 
 
-
-### The Brilliant
+## The Brilliant 
 https://cli-assets.heroku.com/branches/stable/heroku-windows-amd64.exe
 
-##
+## ServerLess
 npm install serverless -g
 
 #### Deployment and Build
@@ -96,16 +97,21 @@ Install-WindowsUpdate -acceptEula
 
 ### Developer Frameworks and Opesource Stuff that are must haves for me
 ### Electron 
-for cross platofrm windows dev
 cinst electron
 Simetimes we have to 
 choco install composer
 
-### FROFILING
+## FROFILING
 choco install newrelic
 
 ### My Machine Learning Stack
+https://github.com/mikewlange/cheatsheets-ai-fork - Big list and neural network descriptions. 
+https://github.com/NVIDIA/caffe
+https://github.com/torch
+https://github.com/torch/cutorch
 https://github.com/rhiever/tpot
+
+## Sometimes
 https://github.com/mikewlange/leaf
 https://github.com/autumnai/collenchyma
 https://github.com/nikolaypavlov/MLPNeuralNet
@@ -116,9 +122,10 @@ https://github.com/tensorflow/tensorflow
 https://github.com/scikit-learn/scikit-learn
 https://github.com/harvardnlp/im2markup
 
+
 ## Automate it!
 Below, you can see the all the things I need to actually go and work on stuff. If you like all those things, you can automate the installation thanks to the magic of [Boxstarter](http://boxstarter.org/). Simply start PowerShell as Administrator and run:
 
 ```
-START http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/felixrieseberg/windows-development-environment/master/boxstarter
+START ... figure it out! :)
 ```
