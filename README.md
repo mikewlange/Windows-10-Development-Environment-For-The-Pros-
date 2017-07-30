@@ -14,12 +14,12 @@ cinst -y Microsoft-Hyper-V-All -source windowsFeatures
 
 ## other package managers
 cinst -y cmder -pre
-cinst -y hyper
-cinst -y Gow
+cinst -y hyper 
+cinst -y Gow 
 
 ## For the love of git
 cinst -y git.install
-cinst -y poshgit
+cinst -y poshgit 
 cinst -y git-credential-winstore
 cinst -y github
 
