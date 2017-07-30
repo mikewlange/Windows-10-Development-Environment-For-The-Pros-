@@ -1,7 +1,7 @@
-# Windows 10 Language Agnotic Programmer Setup
-[![N|Solid](https://i.imgur.com/TjqgfC6.png)](https://fart.school) <br>
+# Windows 10 Modern Developer Setup
+[![N|Solid](https://i.imgur.com/TjqgfC6.png)](https://www.fart.school) <br>
 
-I'm sharing this as I needed to set up a Windows 10 dev box the other day. I haven't used windows for dev in 7 years and I have to be agile enough to work in any language on almost every modern platform with minimul config and I' pretty happy with this set up, so here you go. Most of it can be done right in the terminal. BUt don't just go copy and posting, reshearch what everything is, if you do not know. 
+I'm sharing this as I needed to set up a Windows 10 dev box the other day. I haven't used windows for dev in 7 years and I have to be agile enough to work in any language on almost every modern platform with minimul config and I'm pretty happy with this set up, so here you go. Most of it can be done right in the terminal. but don't just go copy and pasteing, research what everything is if you do not know. 
 
 This started as a fork of something - but now completly different. Thanks for making my life easier mystery person.. 
 
@@ -12,15 +12,12 @@ Update-ExecutionPolicy Unrestricted
 
 cinst -y Microsoft-Hyper-V-All -source windowsFeatures
 
-# Packages
+## other Package managers
 cinst -y cmder -pre
 cinst -y hyper
 cinst -y Gow
 
-## Node, npm
-cinst -y nodejs.install
-
-## Git
+## For the love of git
 cinst -y git.install
 cinst -y poshgit
 cinst -y git-credential-winstore
@@ -32,31 +29,30 @@ npm install -g npm-windows-upgrade
 
 ## Editors
 cinst -y visualstudiocode
+Sublime 3 = get it. 
 
-## Visual Studio 2015
-cinst -y visualstudio2015community
-if (Test-PendingReboot) { Invoke-Reboot }
+## IDE's
+https://www.jetbrains.com/ - best 50$ a month you can spen in this busness, a close 2nd is 
+http://www.adobe.com/creativecloud.html   
 
-## Ruby, Go, Python, Lua, Java, C
+## Ruby, Go, Python
 cinst -y ruby
 cinst -y ruby.devkit
 cinst -y golang
 cinst -y python
 cinst -y pip
 cinst -y easy.install
+choco install composer (if you have to use php)
 
-## Docker and stuff
+## Docker
  https://download.docker.com/win/stable/DockerToolbox.exe
  
-## Virtual Box 
+## Virtual Box and Vagrant
 cinst -y virtualbox 
 cinst -y virtualbox.extensionpack
 cinst -y vagrant
 
-## open SSh
-cinst -y win32-openssh
-
-## Cloud 
+## m$ Cloud 
 npm install -g azure-cli
 
 ## The Devil
@@ -87,16 +83,16 @@ cinst -y GoogleChrome
 cinst -y 7zip.install
 cinst -y sysinternals
 cinst -y DotNet4.x
+cinst -y win32-openssh
 if (Test-PendingReboot) { Invoke-Reboot }
 
-# Pinning Things
+# Pinn it
 Install-ChocolateyPinnedTaskBarItem "$env:programfiles\Google\Chrome\Application\chrome.exe"
 
-# Let's get Updates, too
+let's get Updates, too
 Install-WindowsUpdate -acceptEula
 
-### Developer Frameworks and Opesource Stuff that are must haves for me
-### Electron 
+## Electron 
 cinst electron
 Simetimes we have to 
 choco install composer
@@ -104,14 +100,14 @@ choco install composer
 ## FROFILING
 choco install newrelic
 
-### My Machine Learning Stack
+## My Machine Learning Stack
 https://github.com/mikewlange/cheatsheets-ai-fork - Big list and neural network descriptions. 
 https://github.com/NVIDIA/caffe
 https://github.com/torch
 https://github.com/torch/cutorch
 https://github.com/rhiever/tpot
 
-## Sometimes
+## Other stufff
 https://github.com/mikewlange/leaf
 https://github.com/autumnai/collenchyma
 https://github.com/nikolaypavlov/MLPNeuralNet
@@ -124,7 +120,7 @@ https://github.com/harvardnlp/im2markup
 
 
 ## Automate it!
-Below, you can see the all the things I need to actually go and work on stuff. If you like all those things, you can automate the installation thanks to the magic of [Boxstarter](http://boxstarter.org/). Simply start PowerShell as Administrator and run:
+Automate this instalation thanks to the magic of [Boxstarter](http://boxstarter.org/). Simply start PowerShell as Administrator and run:
 
 ```
 START ... figure it out! :)
