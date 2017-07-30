@@ -1,9 +1,9 @@
-## Modern Random Programmer Setup. 
-I'm sharing this as I needed to set up a Windows 10 dev box for modern laguage agnostic deveopment. I've been off windows for almost 10 years. I thought it would be good to write down. 
+# Windows 10 Language Agnotic Programmer Setup
+[![N|Solid](https://i.imgur.com/TjqgfC6.png)](https://fart.school) <br>
 
-I use Mac or ubuntu for commercial work. But msoft nailed it with in 10. woudn'tswitch back, but it's now my ML machine. But I'm qite satified with my (incomplete) setup beow. 
+I'm sharing this as I needed to set up a Windows 10 dev box the other day. I haven't used windows for dev in 7 years and I have to be agile enough to work in any language on almost every modern platform with minimul config and I' pretty happy with this set up, so here you go. Most of it can be done right in the terminal. BUt don't just go copy and posting, reshearch what everything is, if you do not know. 
 
-This is a fork of something - but completly different. But I did steal the idea to write this here. Thanks for making my life easier mystery person.. 
+This started as a fork of something - but now completly different. Thanks for making my life easier mystery person.. 
 
 # Configure Windows
 Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions -EnableShowFullPathInTitleBar
