@@ -5,14 +5,14 @@ I'm sharing this as I needed to set up a Windows 10 dev box the other day. I hav
 
 This started as a fork of something - but now completly different. Thanks for making my life easier mystery person.. 
 
-# Configure Windows
+## Configure Windows
 Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions -EnableShowFullPathInTitleBar
 
 Update-ExecutionPolicy Unrestricted
 
 cinst -y Microsoft-Hyper-V-All -source windowsFeatures
 
-## other Package managers
+## other package managers
 cinst -y cmder -pre
 cinst -y hyper
 cinst -y Gow
@@ -23,16 +23,12 @@ cinst -y poshgit
 cinst -y git-credential-winstore
 cinst -y github
 
-## Node, npm
-cinst -y nodejs.install
-npm install -g npm-windows-upgrade
-
 ## Editors
 cinst -y visualstudiocode
-Sublime 3 = get it. 
+Sublime 3 = nest exitor availible for multi language programming. get it. but VScode is close on its tail. 
 
 ## IDE's
-https://www.jetbrains.com/ - best 50$ a month you can spen in this busness, a close 2nd is 
+https://www.jetbrains.com/ - best 50$ a month you can spend on your career, a close 2nd is 
 http://www.adobe.com/creativecloud.html   
 
 ## Ruby, Go, Python
@@ -43,6 +39,10 @@ cinst -y python
 cinst -y pip
 cinst -y easy.install
 choco install composer (if you have to use php)
+
+## Node, npm
+cinst -y nodejs.install
+npm install -g npm-windows-upgrade
 
 ## Docker
  https://download.docker.com/win/stable/DockerToolbox.exe
@@ -69,7 +69,7 @@ https://cli-assets.heroku.com/branches/stable/heroku-windows-amd64.exe
 ## ServerLess
 npm install serverless -g
 
-#### Deployment and Build
+## Deployment and Build
 GULP
 choco install gulp-cli
 GRUNT
@@ -86,7 +86,7 @@ cinst -y DotNet4.x
 cinst -y win32-openssh
 if (Test-PendingReboot) { Invoke-Reboot }
 
-# Pinn it
+#### Pinn it
 Install-ChocolateyPinnedTaskBarItem "$env:programfiles\Google\Chrome\Application\chrome.exe"
 
 let's get Updates, too
